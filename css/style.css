@@ -1,0 +1,134 @@
+/* BODY */
+
+.body {
+    font: 12px/18px Arial, sans-serif;
+	width: 100%;
+}
+
+/* HEADER */
+
+.titulos-principales h1 {
+    padding: 10px;
+    text-align: center;
+    background-color: #523737;
+    color: #ffffff;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+/* CONTENEDORES, CONTENIDOS, ARTICULOS y TITULO-SECUNDARIO */
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-gap: 1.6em;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.contenedor>.header, .contenedor>.contenido, .contenedor>.galeria, .contenedor>div {
+    background: #634a4a;
+    padding: 20px;
+    border: 2px solid #000000;
+	
+}
+
+.contenedor>.titulos-secundarios {
+    grid-column: 1/-1;
+    background-color: #523737;
+    color: #ffffff;
+    bottom: 0;
+    width: 1000px;
+    height: 100px;
+    text-align: center;
+	border: 2px solid #000000;
+}
+	
+.contenedor>.contenido {
+    grid-column: span 3;
+    grid-row: span 4;
+}
+
+.contenido>.articulos {
+    background: #523737;
+    padding: 20px;
+    margin: 5px;
+    color: #dfe6e9
+}
+
+.contenido .articulos p {
+    padding: 10px;
+}
+
+.contenedor>.galeria {
+    grid-column: span 2;
+    grid-row: span 4;
+    color:  #000000;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor .galeria img {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+.contenedor>.costado: {
+    color: #000000;
+    background: #ffffff;
+}
+
+/* NAV */
+
+.menu-navegacion {
+	padding: 0;
+	background: #523737;
+	width: center;
+	max-width: center;
+	text-align: center;
+	border: 2px solid #000000;
+}
+
+.menu-navegacion li a{
+	text-decoration: none;
+	color: #FFFF;
+	padding: 20px;
+}
+
+.menu-navegacion li{
+	display: inline;
+	text-align: center;
+}
+
+/* FOOTER */
+
+.footer {
+	width: 564%;
+	height: 150%;
+	background: #523737;
+	margin-top: 1px;
+	border: 2px solid #000000;
+	color: white;
+}
+
+.footer > div {
+    position: relative;
+    top: 10px;
+}
+.footer .copyright {
+	margin-left: 40px;
+	float: left;
+}
+
+.footer .redes {
+    float: right;
+	height: 30px;
+	padding-right: 30px;
+}
+
+.footer .redes img {
+    height: 100%;
+}	
